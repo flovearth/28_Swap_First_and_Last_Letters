@@ -7,5 +7,16 @@ front_back(word)
 
 # There is a problem. This fails when a one-letter-word given.
 
+#Let's try different way:
 
+word = input('Please write down a word: ')
+def front_back(word):
+    word_list = list(word)
+    keep_in_mind = word_list[0], word_list[-1]
+    word_list[0] = keep_in_mind[1]
+    word_list[-1] = keep_in_mind[0]
+    return (''.join(word_list))
     
+print(front_back(word))
+
+#Yes! it works :-)
