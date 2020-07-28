@@ -1,0 +1,11 @@
+# This is first try and seems work.
+word = input('Please write down a word: ')
+def front_back(word):
+    print(word[-1:] + word[1:-1] + word[:1])
+
+front_back(word)
+
+# There is a problem. This fails when a one-letter-word given.
+
+
+    
